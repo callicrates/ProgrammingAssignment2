@@ -12,6 +12,7 @@
 # scoping rules for the purpose of this class?
 
 makeCacheMatrix <- function(x = matrix()) {
+    cachedInverse <- NULL
     set <- function(newMatrix) {
         x <<- newMatrix
         cachedInverse <<- NULL
